@@ -1,3 +1,14 @@
 body {
     background-color: rgb(214, 214, 214);
+    position: relative;
+    overflow-x: hidden;
+}
+
+#modal {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(2, 2, 2, 0.288);
+    display: none;
 }
