@@ -12,7 +12,7 @@ function render() {
   let tableRows = '';
 
   myLibrary.forEach(book => {
-  tableRows += `<tr>
+    tableRows += `<tr>
 <th scope='row' class='text-center'><span class='badge badge-primary'>${
   book.id
 }</span></th>
@@ -33,6 +33,12 @@ Delete
 </tr>`;
   });
   document.getElementById('table-body').innerHTML = tableRows;
+}
+
+const modal = document.getElementById('modal');
+
+function displayN() {
+  modal.style.display = 'none';
 }
 
 function addBookToLibrary() {
@@ -70,12 +76,6 @@ function deleteBook(id) {
   render();
 }
 
-const modal = document.getElementById('modal');
-
 function displayB() {
   modal.style.display = 'block';
-}
-
-function displayN() {
-  modal.style.display = 'none';
 }
