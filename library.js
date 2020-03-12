@@ -13,19 +13,23 @@ function render() {
 
   myLibrary.forEach(book => {
     tableRows += `<tr>
-		<th scope="row">${book.id}</th>
-		<td class="text-center">${book.title}</td>
-		<td class="text-center">${book.author}</td>
-		<td class="text-center">${book.pages}</td>
-		<td class="text-center"><button type="button" onclick="changeStatus(${
+		<th scope="row" class="text-center"><span class="badge badge-primary">${
+      book.id
+    }</span></th>
+		<th class="text-center"> ${book.title}</th>
+		<th class="text-center">${book.author}</th>
+		<th class="text-center">${book.pages}</th>
+		<th class="text-center"><button type="button" class="btn btn-outline-primary" onclick="changeStatus(${
       book.id
     })">
 		${book.status ? "Read" : "Not read"}
 		</button>
-		</td>
-		<td class="text-center"><button type="button" onclick="deleteBook(${book.id})">
+		</th>
+		<th class="text-center"><button type="button" class="btn btn-outline-danger" onclick="deleteBook(${
+      book.id
+    })">
 		Delete
-		</button></td>
+		</button></th>
 </tr>`;
   });
   document.getElementById("table-body").innerHTML = tableRows;
