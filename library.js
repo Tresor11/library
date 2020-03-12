@@ -20,7 +20,7 @@ function render() {
 		<th class='text-center'>${book.author}</th>
 		<th class='text-center'>${book.pages}</th>
 		<th class='text-center'><button type='button' class='btn btn-outline-primary' onclick='changeStatus(${
-      book.id
+  book.id
 })'>
 		${book.status ? 'Read' : 'Not read'}
 		</button>
