@@ -1,4 +1,4 @@
-# library
+# Nicro library
 
 Library is an online app where users can add and delete books. Users can also update the status of the books in the library to "Read" or "Not read" according to whether they have read or not yet read the books. This is part of the [Ordin projects](https://www.theodinproject.com/courses/javascript/lessons/library) from the [microverse](https://www.microverse.org/)  curriculum.
 
@@ -25,13 +25,13 @@ git clone https://github.com/Tresor11/library.git
 to clone this project to your local machine and you are goot to go.
 
 
-👤 **Author1**
+👤 **Tresor**
 
 - Github: [@Tresor11](https://github.com/Tresor11)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
 
-👤 **Author2**
+👤 **Phemia**
 
 - Github: [@ampaire](https://github.com/ampaire)
 - Twitter: [@AmpaPhem](https://twitter.com/AmpaPhem)
