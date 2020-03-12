@@ -1,61 +1,75 @@
 const myLibrary = [];
 
-function Book(title, category, author, pages, read) {
-  this.title = title;
-  this.description = description;
-  this.category = category;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
+function Book(title, author, pages, status) {
+    this.title = title;
+    this.id = myLibrary.length
+    this.author = author;
+    this.pages = pages;
+    this.status = status;
 }
 
-Book.prototype.hasBeenRead = function() {
-  return this.read ? "read" : "Not yet read";
-};
+function render() {
+    let tableRows = ''
 
-myLibrary.forEach( book => {
-  Object.setPrototypeOf(book, Book.prototype);
-});
-function updateBooks(arr) {
-  window.localStorage.setItem("library", JSON.stringify(arr));
+    myLibrary.forEach(book => {
+        tableRows += `<tr>
+		<th scope="row">${book.id}</th>
+		<td class="text-center">${book.title}</td>
+		<td class="text-center">${book.author}</td>
+		<td class="text-center">${book.pages}</td>
+		<td class="text-center"><button type="button" onclick="changeStatus(${book.id})">
+		${book.status? 'Read':'Not read'}
+		</button>
+		</td>
+		<td class="text-center"><button type="button" onclick="deleteBook(${book.id})">
+		Delete
+		</button></td>
+</tr>`
+    })
+    document.getElementById("table-body").innerHTML = tableRows;
 }
 
 function addBookToLibrary() {
-  const title = document.getElementById("title").value;
-  const author = document.getElementById("author").value;
-  const category = document.getElementById("category").value;
-  const pages = document.getElementById("pages").value;
-  const read = document.getElementById("status").checked;
-  const new_book = new Book(title, category, author, pages, read);
-  myLibrary.push(new_book);
- 
-  updateBooks(myLibrary);
-
-  document.forms[0].reset();
-  displayN();
-  secondTable.innerHTML = "";
-  render();
-  console.warn("added", { myLibrary });
-  window.localStorage.setItem("library", JSON.stringify(myLibrary));
+    const title = document.getElementById("title").value;
+    const author = document.getElementById("author").value;
+    const pages = document.getElementById("pages").value;
+    const status = document.getElementById("status").checked;
+    const newBook = new Book(title, author, pages, status);
+    if (title == '') {
+        window.alert("please provide a title")
+        title.focus();
+        return false;
+    }
+    myLibrary.push(newBook);
+    displayN();
+    render();
+    return 0;
 }
 
-document.addEventListener("DOMContentLoaded", () => { document  .getElementById("add-book")
-    .addEventListener("click", addBookToLibrary);
-});
-
-const table = document.getElementById('books-library');
-
-function render () {
-
+function changeStatus(id) {
+    myLibrary.forEach(book => {
+        if (book.id == id) {
+            book.status = !book.status
+        }
+    })
+    render();
 }
 
-const submit = document.getElementById("send");
+function deleteBook(id) {
+    myLibrary.forEach(book => {
+        if (book.id == id) {
+            myLibrary.splice(myLibrary.indexOf(book), 1)
+        }
+    })
+    render()
+}
+
 const modal = document.getElementById("modal");
 
 function displayB() {
-  modal.style.display = "block";
+    modal.style.display = "block";
 }
 
 function displayN() {
-  modal.style.display = "none";
+    modal.style.display = "none";
 }
