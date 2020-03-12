@@ -21,13 +21,13 @@ function render() {
 		<th class='text-center'>${book.pages}</th>
 		<th class='text-center'><button type='button' class='btn btn-outline-primary' onclick='changeStatus(${
       book.id
-    })'>
+})'>
 		${book.status ? 'Read' : 'Not read'}
 		</button>
 		</th>
 		<th class='text-center'><button type='button' class='btn btn-outline-danger' onclick='deleteBook(${
       book.id
-    })'>
+})'>
 		Delete
 		</button></th>
 </tr>`;
@@ -41,7 +41,7 @@ function addBookToLibrary() {
   const pages = document.getElementById('pages').value;
   const status = document.getElementById('status').checked;
   const newBook = new Book(title, author, pages, status);
-  if (title == '') {
+  if (title === '') {
     window.alert('please provide a title');
     title.focus();
     return false;
@@ -54,7 +54,7 @@ function addBookToLibrary() {
 
 function changeStatus(id) {
   myLibrary.forEach(book => {
-    if (book.id == id) {
+    if (book.id === id) {
       book.status = !book.status;
     }
   });
@@ -63,7 +63,7 @@ function changeStatus(id) {
 
 function deleteBook(id) {
   myLibrary.forEach(book => {
-    if (book.id == id) {
+    if (book.id === id) {
       myLibrary.splice(myLibrary.indexOf(book), 1);
     }
   });
