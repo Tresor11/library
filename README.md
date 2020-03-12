@@ -1,4 +1,4 @@
-# Nicro library
+# Micro library
 
 Library is an online app where users can add and delete books. Users can also update the status of the books in the library to "Read" or "Not read" according to whether they have read or not yet read the books. This is part of the [Ordin projects](https://www.theodinproject.com/courses/javascript/lessons/library) from the [microverse](https://www.microverse.org/)  curriculum.
 
