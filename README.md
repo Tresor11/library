@@ -37,6 +37,7 @@ to clone this project to your local machine and you are goot to go.
 - Twitter: [@AmpaPhem](https://twitter.com/AmpaPhem)
 - Linkedin: [linkedin](https://linkedin.com/ampaire-phemia)
 
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
@@ -50,3 +51,5 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 - [Ordin](https://www.theodinproject.com/courses/javascript/lessons/library)
 - [Sololearn](https://www.sololearn.com/Play/JavaScript)
+
+
