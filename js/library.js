@@ -61,7 +61,7 @@ function addBookToLibrary() {
   myLibrary.push(newBook);
   displayN();
   render();
-  return 0;  
+  return 0;
 }
 
 // eslint-disable-next-line no-unused-vars
