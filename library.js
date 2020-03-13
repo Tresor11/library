@@ -40,14 +40,19 @@ const modal = document.getElementById('modal');
 function displayN() {
   modal.style.display = 'none';
 }
-// eslint-disable-next-line no-use-before-define
+
+function displayB() {
+  modal.style.display = 'block';
+}
+
+// eslint-disable-next-line no-unused-vars
 function addBookToLibrary() {
   const title = document.getElementById('title').value;
   const author = document.getElementById('author').value;
   const pages = document.getElementById('pages').value;
   const status = document.getElementById('status').checked;
   const newBook = new Book(title, author, pages, status);
-  if (title === '' || author==='' || pages==='') {
+  if (title === '' || author === '' || pages=== '' ) {
     displayB();
     return false;
   }
@@ -75,6 +80,4 @@ function deleteBook(id) {
   render();
 }
 
-function displayB() {
-  modal.style.display = 'block';
-}
+
