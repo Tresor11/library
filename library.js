@@ -14,20 +14,20 @@ function render() {
   myLibrary.forEach(book => {
     tableRows += `<tr>
 <th scope='row' class='text-center'><span class='badge badge-primary'>${
-  book.id
-}</span></th>
+      book.id
+    }</span></th>
 <th class='text-center'> ${book.title}</th>
 <th class='text-center'>${book.author}</th>
 <th class='text-center'>${book.pages}</th>
 <th class='text-center'><button type='button' class='btn btn-outline-primary' onclick='changeStatus(${
-  book.id
-})'>
+      book.id
+    })'>
   ${book.status ? 'Read' : 'Not read'}
 </button>
 </th>
 <th class='text-center'><button type='button' class='btn btn-outline-danger' onclick='deleteBook(${
-  book.id
-})'>
+      book.id
+    })'>
 Delete
 </button></th>
 </tr>`;
@@ -52,7 +52,7 @@ function addBookToLibrary() {
   const pages = document.getElementById('pages').value;
   const status = document.getElementById('status').checked;
   const newBook = new Book(title, author, pages, status);
-  if (title === '' || author === '' || pages=== '' ) {
+  if (title === '' || author === '' || pages === '') {
     displayB();
     return false;
   }
@@ -62,6 +62,7 @@ function addBookToLibrary() {
   return 0;
 }
 
+// eslint-disable-next-line no-unused-vars
 function changeStatus(id) {
   myLibrary.forEach(book => {
     if (book.id === id) {
@@ -71,6 +72,7 @@ function changeStatus(id) {
   render();
 }
 
+// eslint-disable-next-line no-unused-vars
 function deleteBook(id) {
   myLibrary.forEach(book => {
     if (book.id === id) {
@@ -79,5 +81,3 @@ function deleteBook(id) {
   });
   render();
 }
-
-
