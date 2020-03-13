@@ -33,6 +33,7 @@ function addBookToLibrary() {
   document.getElementById('form').reset();
   myLibrary.push(newBook);
   displayN();
+// eslint-disable-next-line no-undef
   render();
   return 0;
 }
@@ -44,6 +45,7 @@ function changeStatus(id) {
       book.status = !book.status;
     }
   });
+// eslint-disable-next-line no-undef
   render();
 }
 
@@ -54,5 +56,6 @@ function deleteBook(id) {
       myLibrary.splice(myLibrary.indexOf(book), 1);
     }
   });
+// eslint-disable-next-line no-undef
   render();
 }
