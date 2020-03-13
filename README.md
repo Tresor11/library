@@ -1,57 +1,43 @@
-# Project Name
+# Micro library
+![screenshot](library.png)
 
-> One paragraph statement about the project.
+Library is an online app where users can add and delete books. Users can also update the status of the books in the library to "Read" or "Not read" according to whether they have read or not yet read the books. This is part of the [Ordin projects](https://www.theodinproject.com/courses/javascript/lessons/library) from the [microverse](https://www.microverse.org/)  curriculum.
 
-![screenshot](./app_screenshot.png)
+## Features
+- A user can add a book
+- A user can update the read status of a book
+- A user can delete a book from the library
 
-Additional description about the project and its features.
+## Live link
+[Library](https://raw.githack.com/Tresor11/library/features/index.html)
 
-## Built With
-
-- Major languages,
-- frameworks,
-- technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
+## Prerequisites
+To comfortably use this project, prior knowledge of the following is ideal
+- Html and Css
+- Javascript
+- Eslint
+- Bootstrap 4
 
 ### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
+Run 
+~~~ 
+git clone https://github.com/Tresor11/library.git 
+~~~
+to clone this project to your local machine and you are goot to go.
 
 
+👤 **Tresor**
 
-## Authors
-
-👤 **Author1**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
+- Github: [@Tresor11](https://github.com/Tresor11)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
 
-👤 **Author2**
+👤 **Phemia**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@ampaire](https://github.com/ampaire)
+- Twitter: [@AmpaPhem](https://twitter.com/AmpaPhem)
+- Linkedin: [linkedin](https://linkedin.com/ampaire-phemia)
+
 
 ## 🤝 Contributing
 
@@ -64,11 +50,7 @@ Feel free to check the [issues page](issues/).
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
+- [Ordin](https://www.theodinproject.com/courses/javascript/lessons/library)
+- [Sololearn](https://www.sololearn.com/Play/JavaScript)
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
-## 📝 License
-
-This project is [MIT](lic.url) licensed.

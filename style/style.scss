@@ -1,0 +1,24 @@
+#body {
+    overflow-x: hidden;
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-family: cursive;
+}
+
+.table {
+    position: relative;
+}
+
+#modal {
+    position: absolute;
+    margin-top: 20vh;
+    z-index: 100;
+    display: none;
+}
+
+#form {
+    border: 3px solid black;
+    background-color: white;
+}
