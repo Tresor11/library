@@ -53,13 +53,16 @@ function addBookToLibrary() {
   const status = document.getElementById('status').checked;
   const newBook = new Book(title, author, pages, status);
   if (title === '' || author === '' || pages === '') {
+    document.getElementById('alert-user').style.display = 'block';
     displayB();
     return false;
   }
+  document.getElementById('form').reset();
   myLibrary.push(newBook);
   displayN();
   render();
   return 0;
+  
 }
 
 // eslint-disable-next-line no-unused-vars

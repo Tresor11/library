@@ -22,22 +22,25 @@
       <button class="btn btn-outline-success ml-4" onclick="displayB()">Add book</button>
     </div>
     <div id="modal" class="col-12 row">
-      <form action="" class="col-3 m-auto bg-white p-3 border border-dark" id="#form">
+      <div id="alert-user" class="alert-danger text-center">
+        <p>Please fill in all fields</p>
+      </div>
+      <form action="" class="col-3 m-auto bg-white p-3 border border-dark" id="form">
         <div class="form-group">
           <label for="title">title</label>
-          <input type="text" name="title" id="title" class="form-control" placeholder="title" aria-describedby="helpId">
+          <input type="text" name="title" id="title" class="form-control" placeholder="title" aria-describedby="helpId" required>
         </div>
 
         <div class="form-group">
           <label for="title">author</label>
           <input type="text" name="author" id="author" class="form-control" placeholder="author"
-            aria-describedby="helpId">
+            aria-describedby="helpId" required>
         </div>
 
         <div class="form-group">
           <label for="title">Pages</label>
           <input type="number" name="pages" id="pages" class="form-control" placeholder="pages"
-            aria-describedby="helpId">
+            aria-describedby="helpId" required>
         </div>
 
         <div class="form-group">
