@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Tresor11/library#readme",
   "devDependencies": {
-    "eslint": "^6.8.0",
+    "eslint": "^9.39.1",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.1"
   }
